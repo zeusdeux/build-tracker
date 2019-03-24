@@ -22,17 +22,23 @@ const Comparison = React.lazy(() => import(/* webpackChunkName: "Comparison" */ 
 
 interface Props {
   artifactConfig?: AppConfig['artifacts'];
+  query?: { aa: Array<string>; cr: Array<string>; cs: string; sk: string; dav: string };
   url: string;
 }
 
 const Main = (props: Props): React.ReactElement => {
-  const { artifactConfig = {}, url } = props;
+  const { artifactConfig = {}, query, url } = props;
   const drawerRef: React.RefObject<Drawer> = React.useRef(null);
-  const [compareRevisions, setCompareRevisions] = React.useState<Array<string>>([]);
+
+  const initialCompareRev = query.cr ? (Array.isArray(query.cr) ? query.cr : [query.cr]) : [];
+  const [compareRevisions, setCompareRevisions] = React.useState<Array<string>>(initialCompareRev);
 
   const [builds, setBuilds] = React.useState<Array<Build>>([]);
-  const [sizeKey, setSizeKey] = React.useState<string>('');
+  const [sizeKey, setSizeKey] = React.useState<string>(query.sk || '');
+
+  const initialActiveArtifacts = query.aa ? (Array.isArray(query.aa) ? query.aa : [query.aa]) : [];
   const [activeArtifacts, setActiveArtifacts] = React.useState<{ [key: string]: boolean }>({});
+
   React.useEffect(() => {
     fetch(`${url}/api/builds`)
       .then(response => response.json())
@@ -44,9 +50,10 @@ const Main = (props: Props): React.ReactElement => {
   const comparator = React.useMemo((): Comparator => {
     const comparator = new Comparator({ builds });
     setSizeKey(comparator.sizeKeys[0]);
+    const useInitial = Object.keys(activeArtifacts).length === 0;
     setActiveArtifacts(
       comparator.artifactNames.reduce((memo, artifactName) => {
-        memo[artifactName] = true;
+        memo[artifactName] = useInitial ? initialActiveArtifacts.includes(artifactName) : true;
         return memo;
       }, {})
     );
@@ -64,11 +71,13 @@ const Main = (props: Props): React.ReactElement => {
   );
 
   const [colorScale, setColorScale] = React.useState<ScaleSequential<string>>(
-    () => ColorScale[Object.keys(ColorScale)[0]]
+    () => ColorScale[query.cs || Object.keys(ColorScale)[0]]
   );
   const [focusedRevision, setFocusedRevision] = React.useState<string>(null);
   const [hoveredArtifacts, setHoveredArtifacts] = React.useState<Array<string>>([]);
-  const [disabledArtifactsVisible, setDisabledArtifactsVisible] = React.useState<boolean>(true);
+  const [disabledArtifactsVisible, setDisabledArtifactsVisible] = React.useState<boolean>(
+    query.dav ? (query.dav === 'true' ? true : false) : true
+  );
 
   const [messages, setMessages] = React.useState<Array<string>>([]);
 
@@ -182,6 +191,22 @@ const Main = (props: Props): React.ReactElement => {
     setMessages(messages => [...messages, 'Copied table as CSV'].filter(Boolean));
   }, [activeComparator, artifactFilter, sizeKey]);
 
+  const handleLink = React.useCallback((): void => {
+    const params = new URLSearchParams();
+    compareRevisions.forEach(rev => {
+      params.append('cr', rev);
+    });
+    params.append('cs', Object.keys(ColorScale).find(key => ColorScale[key] === colorScale));
+    params.append('sk', sizeKey);
+    Object.keys(activeArtifacts).forEach(name => {
+      activeArtifacts[name] && params.append('aa', name);
+    });
+    params.append('dav', `${disabledArtifactsVisible}`);
+    Clipboard.setString(`${url}?${params.toString()}`);
+    window.history.replaceState({}, '', `${url}?${params.toString()}`);
+    setMessages(messages => [...messages, 'Copied URL to clipboard']);
+  }, [activeArtifacts, colorScale, compareRevisions, disabledArtifactsVisible, sizeKey]);
+
   React.useEffect(() => {
     if (messages.length) {
       setTimeout(() => {
@@ -212,29 +237,32 @@ const Main = (props: Props): React.ReactElement => {
             navigationIcon={MenuIcon}
             onPressNavigationIcon={showDrawer}
             overflowItems={
-              compareRevisions.length ? (
+              activeComparator.builds.length ? (
                 <>
                   <MenuItem key="clear" label="Clear selected revisions" onPress={handleClearRevisions} />
                   <MenuItem key="md" label="Copy as markdown" onPress={handleCopyAsMarkdown} />
                   <MenuItem key="csv" label="Copy as CSV" onPress={handleCopyAsCsv} />
+                  <MenuItem key="link" label="Link to this view" onPress={handleLink} />
                 </>
               ) : null
             }
             title="Build Tracker"
           />
-          <Graph
-            activeArtifacts={activeArtifacts}
-            colorScale={colorScale}
-            comparator={comparator}
-            hoveredArtifacts={hoveredArtifacts}
-            onHoverArtifacts={handleHoverArtifacts}
-            onSelectRevision={handleSelectRevision}
-            selectedRevisions={compareRevisions}
-            sizeKey={sizeKey}
-          />
+          {comparator.builds.length ? (
+            <Graph
+              activeArtifacts={activeArtifacts}
+              colorScale={colorScale}
+              comparator={comparator}
+              hoveredArtifacts={hoveredArtifacts}
+              onHoverArtifacts={handleHoverArtifacts}
+              onSelectRevision={handleSelectRevision}
+              selectedRevisions={compareRevisions}
+              sizeKey={sizeKey}
+            />
+          ) : null}
         </View>
         {messages.length ? <Snackbar key={messages[0]} text={messages[0]} /> : null}
-        {compareRevisions.length ? (
+        {activeComparator.builds.length ? (
           <React.Suspense fallback={null}>
             <Comparison
               activeArtifacts={activeArtifacts}
