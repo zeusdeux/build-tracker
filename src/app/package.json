@@ -1,6 +1,6 @@
 {
   "name": "@zeusdeux/app",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0",
   "description": "Build Tracker client side application for tracking builds over time",
   "author": "Paul Armstrong <paul@spaceyak.com>",
   "repository": "git@github.com:paularmstrong/build-tracker.git",
@@ -35,10 +35,6 @@
     "uuid": "^3.3.2"
   },
   "devDependencies": {
-    "@zeusdeux/build": "^1.0.0-alpha.1",
-    "@zeusdeux/comparator": "^1.0.0-alpha.1",
-    "@zeusdeux/fixtures": "^1.0.0-alpha.0",
-    "@zeusdeux/types": "^1.0.0-alpha.1",
     "@testing-library/react": "^8.0.0",
     "@types/d3-axis": "^1.0.12",
     "@types/d3-color": "^1.2.2",
@@ -51,6 +47,10 @@
     "@types/react": "^16.8.3",
     "@types/react-dom": "^16.8.2",
     "@types/react-native": "^0.57.37",
+    "@zeusdeux/build": "^1.0.0",
+    "@zeusdeux/comparator": "^1.0.0",
+    "@zeusdeux/fixtures": "^1.0.0",
+    "@zeusdeux/types": "^1.0.0",
     "chalk": "^2.4.2",
     "mkdirp": "^0.5.1",
     "react-native-testing-library": "^1.5.0",

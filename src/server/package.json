@@ -1,6 +1,6 @@
 {
   "name": "@zeusdeux/server",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0",
   "description": "Build Tracker node.js web server",
   "author": "Paul Armstrong <paul@spaceyak.com>",
   "repository": "git@github.com:paularmstrong/build-tracker.git",
@@ -16,11 +16,11 @@
     "tsc": "tsc --noEmit"
   },
   "dependencies": {
-    "@zeusdeux/api-errors": "^1.0.0-alpha.1",
-    "@zeusdeux/app": "^1.0.0-alpha.1",
-    "@zeusdeux/build": "^1.0.0-alpha.1",
-    "@zeusdeux/comparator": "^1.0.0-alpha.1",
-    "@zeusdeux/formatting": "^1.0.0-alpha.1",
+    "@zeusdeux/api-errors": "^1.0.0",
+    "@zeusdeux/app": "^1.0.0",
+    "@zeusdeux/build": "^1.0.0",
+    "@zeusdeux/comparator": "^1.0.0",
+    "@zeusdeux/formatting": "^1.0.0",
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "express-pino-logger": "^4.0.0",
@@ -29,12 +29,12 @@
     "yargs": "^13.2.1"
   },
   "devDependencies": {
-    "@zeusdeux/types": "^1.0.0-alpha.1",
     "@types/body-parser": "^1.17.0",
     "@types/express": "^4.16.1",
     "@types/helmet": "^0.0.43",
     "@types/node": "^12.0.0",
     "@types/yargs": "^13.0.0",
+    "@zeusdeux/types": "^1.0.0",
     "node-mocks-http": "^1.7.3",
     "supertest": "^4.0.0",
     "ts-node": "^8.0.2",

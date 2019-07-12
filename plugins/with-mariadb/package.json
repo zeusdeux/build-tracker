@@ -1,6 +1,6 @@
 {
   "name": "@zeusdeux/plugin-with-mariadb",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0",
   "description": "Build Tracker server plugin for MariaDB",
   "author": "Paul Armstrong <paul@spaceyak.com>",
   "repository": "git@github.com:paularmstrong/build-tracker.git",
@@ -13,13 +13,13 @@
     "tsc": "tsc --noEmit"
   },
   "dependencies": {
-    "@zeusdeux/api-errors": "^1.0.0-alpha.1",
+    "@zeusdeux/api-errors": "^1.0.0",
     "dotenv": "^7.0.0",
     "mariadb": "^2.0.5"
   },
   "devDependencies": {
-    "@zeusdeux/types": "^1.0.0-alpha.1",
-    "@types/dotenv": "^6.1.0"
+    "@types/dotenv": "^6.1.0",
+    "@zeusdeux/types": "^1.0.0"
   },
   "publishConfig": {
     "access": "public"

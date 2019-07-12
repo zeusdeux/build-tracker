@@ -1,6 +1,6 @@
 {
   "name": "@zeusdeux/build",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0",
   "description": "Build Tracker tools for interacting with individual Builds",
   "author": "Paul Armstrong <paul@spaceyak.com>",
   "repository": "git@github.com:paularmstrong/build-tracker.git",
@@ -14,7 +14,7 @@
     "tsc": "tsc --noEmit"
   },
   "devDependencies": {
-    "@zeusdeux/types": "^1.0.0-alpha.1"
+    "@zeusdeux/types": "^1.0.0"
   },
   "publishConfig": {
     "access": "public"
