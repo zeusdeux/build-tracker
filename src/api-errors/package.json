@@ -1,5 +1,5 @@
 {
-  "name": "@build-tracker/api-errors",
+  "name": "@zeusdeux/api-errors",
   "version": "1.0.0-alpha.1",
   "description": "Build Tracker API errors",
   "author": "Paul Armstrong <paul@spaceyak.com>",

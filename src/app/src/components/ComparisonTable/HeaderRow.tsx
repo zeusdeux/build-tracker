@@ -7,7 +7,7 @@ import RevisionDeltaCell from './RevisionDeltaCell';
 import { StyleSheet } from 'react-native';
 import TextCell from './TextCell';
 import { Tr } from './../Table';
-import { CellType, HeaderRow as HRow } from '@build-tracker/comparator';
+import { CellType, HeaderRow as HRow } from '@zeusdeux/comparator';
 
 interface Props {
   onFocusRevision: (artifactName: string) => void;

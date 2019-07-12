@@ -2,8 +2,8 @@
  * Copyright (c) 2019 Paul Armstrong
  */
 import * as Theme from '../../theme';
-import { RevisionCell as Cell } from '@build-tracker/comparator';
-import { formatSha } from '@build-tracker/formatting';
+import { RevisionCell as Cell } from '@zeusdeux/comparator';
+import { formatSha } from '@zeusdeux/formatting';
 import Hoverable from '../Hoverable';
 import InfoIcon from '../../icons/Info';
 import Menu from '../Menu';

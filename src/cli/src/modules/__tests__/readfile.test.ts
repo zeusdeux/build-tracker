@@ -4,7 +4,7 @@
 import path from 'path';
 import readfile from '../readfile';
 
-const fixturePath = require.resolve('@build-tracker/fixtures');
+const fixturePath = require.resolve('@zeusdeux/fixtures');
 const main = path.join(path.dirname(fixturePath), 'cli-configs/fakedist/main.1234567.js');
 
 describe('readfile', () => {

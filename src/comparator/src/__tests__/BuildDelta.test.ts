@@ -2,7 +2,7 @@
  * Copyright (c) 2019 Paul Armstrong
  */
 import ArtifactDelta from '../ArtifactDelta';
-import Build from '@build-tracker/build';
+import Build from '@zeusdeux/build';
 import BuildDelta from '../BuildDelta';
 
 describe('BuildDelta', () => {

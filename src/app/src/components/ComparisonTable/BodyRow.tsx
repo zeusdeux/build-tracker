@@ -17,7 +17,7 @@ import {
   GroupRow,
   TotalCell as TCell,
   TotalDeltaCell as TDCell
-} from '@build-tracker/comparator';
+} from '@zeusdeux/comparator';
 
 interface Props {
   colorScale: ScaleSequential<string>;

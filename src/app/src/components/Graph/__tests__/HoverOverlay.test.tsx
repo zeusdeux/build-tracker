@@ -3,8 +3,8 @@
  */
 import * as Selection from 'd3-selection';
 import { act } from 'react-dom/test-utils';
-import Build from '@build-tracker/build';
-import Comparator from '@build-tracker/comparator';
+import Build from '@zeusdeux/build';
+import Comparator from '@zeusdeux/comparator';
 import HoverOverlay from '../HoverOverlay';
 import React from 'react';
 import { stack } from 'd3-shape';

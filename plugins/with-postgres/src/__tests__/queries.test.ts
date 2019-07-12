@@ -3,7 +3,7 @@
  */
 import { Pool } from 'pg';
 import Queries from '../queries';
-import { NotFoundError, UnimplementedError } from '@build-tracker/api-errors';
+import { NotFoundError, UnimplementedError } from '@zeusdeux/api-errors';
 
 jest.mock('pg');
 

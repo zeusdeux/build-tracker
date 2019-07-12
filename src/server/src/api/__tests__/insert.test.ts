@@ -2,8 +2,8 @@
  * Copyright (c) 2019 Paul Armstrong
  */
 import bodyParser from 'body-parser';
-import Build from '@build-tracker/build';
-import Comparator from '@build-tracker/comparator';
+import Build from '@zeusdeux/build';
+import Comparator from '@zeusdeux/comparator';
 import express from 'express';
 import { insertBuild } from '../insert';
 import request from 'supertest';

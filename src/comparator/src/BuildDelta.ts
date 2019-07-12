@@ -2,8 +2,8 @@
  * Copyright (c) 2019 Paul Armstrong
  */
 import ArtifactDelta from './ArtifactDelta';
-import { ArtifactBudgets, ArtifactFilters, Group } from '@build-tracker/types';
-import Build, { ArtifactSizes, BuildMeta } from '@build-tracker/build';
+import { ArtifactBudgets, ArtifactFilters, Group } from '@zeusdeux/types';
+import Build, { ArtifactSizes, BuildMeta } from '@zeusdeux/build';
 
 const emptyObject = Object.freeze({});
 

@@ -1,13 +1,13 @@
 /**
  * Copyright (c) 2019 Paul Armstrong
  */
-import { CellType } from '@build-tracker/comparator';
+import { CellType } from '@zeusdeux/comparator';
 import { DeltaCell } from '../DeltaCell';
 import ErrorIcon from '../../../icons/Error';
 import React from 'react';
 import { Td } from '../../Table';
 import WarningIcon from '../../../icons/Warning';
-import { BudgetLevel, BudgetType } from '@build-tracker/types';
+import { BudgetLevel, BudgetType } from '@zeusdeux/types';
 import { fireEvent, render } from 'react-native-testing-library';
 import { StyleSheet, Text } from 'react-native';
 

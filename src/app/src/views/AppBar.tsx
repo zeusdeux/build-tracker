@@ -1,7 +1,7 @@
 /**
  * Copyright (c) 2019 Paul Armstrong
  */
-import { ArtifactRow } from '@build-tracker/comparator';
+import { ArtifactRow } from '@zeusdeux/comparator';
 import { Clipboard } from 'react-native';
 import { Handles as DrawerHandles } from '../components/Drawer';
 import MenuIcon from '../icons/Menu';

@@ -2,7 +2,7 @@
  * Copyright (c) 2019 Paul Armstrong
  */
 import 'd3-transition';
-import Build from '@build-tracker/build';
+import Build from '@zeusdeux/build';
 import { hsl } from 'd3-color';
 import React from 'react';
 import { select } from 'd3-selection';

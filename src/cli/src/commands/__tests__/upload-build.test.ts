@@ -7,13 +7,10 @@ import nock from 'nock';
 import path from 'path';
 import yargs from 'yargs';
 
-const config = path.join(
-  path.dirname(require.resolve('@build-tracker/fixtures')),
-  'cli-configs/rc/.build-trackerrc.js'
-);
+const config = path.join(path.dirname(require.resolve('@zeusdeux/fixtures')), 'cli-configs/rc/.build-trackerrc.js');
 
 const httpConfig = path.join(
-  path.dirname(require.resolve('@build-tracker/fixtures')),
+  path.dirname(require.resolve('@zeusdeux/fixtures')),
   'cli-configs/rc/.build-tracker-http-rc.js'
 );
 

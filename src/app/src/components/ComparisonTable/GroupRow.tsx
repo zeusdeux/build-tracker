@@ -14,7 +14,7 @@ import {
   GroupRow as GRow,
   TotalCell as TCell,
   TotalDeltaCell as TDCell
-} from '@build-tracker/comparator';
+} from '@zeusdeux/comparator';
 
 interface Props {
   isActive: boolean;

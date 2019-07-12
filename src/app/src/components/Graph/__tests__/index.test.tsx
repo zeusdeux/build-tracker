@@ -1,11 +1,11 @@
 /**
  * Copyright (c) 2019 Paul Armstrong
  */
-import Build from '@build-tracker/build';
-import buildDataA from '@build-tracker/fixtures/builds/30af629d1d4c9f2f199cec5f572a019d4198004c.json';
-import buildDataB from '@build-tracker/fixtures/builds/22abb6f829a07ca96ff56deeadf4d0e8fc2dbb04.json';
-import buildDataC from '@build-tracker/fixtures/builds/243024909db66ac3c3e48d2ffe4015f049609834.json';
-import Comparator from '@build-tracker/comparator';
+import Build from '@zeusdeux/build';
+import buildDataA from '@zeusdeux/fixtures/builds/30af629d1d4c9f2f199cec5f572a019d4198004c.json';
+import buildDataB from '@zeusdeux/fixtures/builds/22abb6f829a07ca96ff56deeadf4d0e8fc2dbb04.json';
+import buildDataC from '@zeusdeux/fixtures/builds/243024909db66ac3c3e48d2ffe4015f049609834.json';
+import Comparator from '@zeusdeux/comparator';
 import mockStore from '../../../store/mock';
 import React from 'react';
 import { StoreContext } from 'redux-react-hook';

@@ -1,11 +1,11 @@
-# @build-tracker/plugin-with-postgres
+# @zeusdeux/plugin-with-postgres
 
 A server-configuration plugin for Build Tracker to enable reading build data from a Postgres database.
 
 Wrap your server's `build-tracker.config.js` configuration with `withPostgres` and include the `pg` options object:
 
 ```js
-const withPostgres = require('@build-tracker/plugin-with-postgres');
+const withPostgres = require('@zeusdeux/plugin-with-postgres');
 
 module.exports = withPostgres({
   pg: {

@@ -3,7 +3,7 @@
  */
 import 'd3-transition';
 import Area from './Area';
-import Build from '@build-tracker/build';
+import Build from '@zeusdeux/build';
 import ColorScales from '../../modules/ColorScale';
 import HoverOverlay from './HoverOverlay';
 import { Offset } from './Offset';

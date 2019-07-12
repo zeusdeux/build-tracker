@@ -1,7 +1,7 @@
 /**
  * Copyright (c) 2019 Paul Armstrong
  */
-import { ArtifactSizes } from '@build-tracker/build';
+import { ArtifactSizes } from '@zeusdeux/build';
 
 export const delta = (key: string, baseSizes?: ArtifactSizes, prevSizes?: ArtifactSizes): number => {
   if (!baseSizes) {

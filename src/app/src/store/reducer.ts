@@ -1,7 +1,7 @@
 /**
  * Copyright (c) 2019 Paul Armstrong
  */
-import Comparator from '@build-tracker/comparator';
+import Comparator from '@zeusdeux/comparator';
 import { Actions, State } from './types';
 
 const getActiveComparator = (

@@ -1,10 +1,10 @@
 /**
  * Copyright (c) 2019 Paul Armstrong
  */
-import { AppConfig } from '@build-tracker/types';
-import Build from '@build-tracker/build';
+import { AppConfig } from '@zeusdeux/types';
+import Build from '@zeusdeux/build';
 import ColorScale from '../modules/ColorScale';
-import Comparator from '@build-tracker/comparator';
+import Comparator from '@zeusdeux/comparator';
 
 interface DateRange {
   start: Date;

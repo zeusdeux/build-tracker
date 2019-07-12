@@ -9,7 +9,7 @@ import React from 'react';
 import { StyleSheet } from 'react-native';
 import { TotalCell } from '../TotalCell';
 import { Tr } from '../../Table';
-import { ArtifactRow, CellType } from '@build-tracker/comparator';
+import { ArtifactRow, CellType } from '@zeusdeux/comparator';
 import { fireEvent, render } from 'react-native-testing-library';
 
 describe('BodyRow', () => {

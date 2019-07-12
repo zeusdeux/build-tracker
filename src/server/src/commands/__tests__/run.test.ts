@@ -12,12 +12,10 @@ describe('run command', () => {
     test('looks for the config in the process working directory', () => {
       jest
         .spyOn(process, 'cwd')
-        .mockReturnValue(path.join(path.dirname(require.resolve('@build-tracker/fixtures')), 'server-configs'));
+        .mockReturnValue(path.join(path.dirname(require.resolve('@zeusdeux/fixtures')), 'server-configs'));
 
       const args = RunCommand.builder(yargs([]));
-      expect(args.argv.config).toEqual(
-        require.resolve('@build-tracker/fixtures/server-configs/build-tracker.config.js')
-      );
+      expect(args.argv.config).toEqual(require.resolve('@zeusdeux/fixtures/server-configs/build-tracker.config.js'));
     });
 
     test('resolves the config path for requires', () => {
@@ -33,7 +31,7 @@ describe('run command', () => {
   describe('handler', () => {
     test('runs the server with the given config', () => {
       jest.spyOn(Server, 'default').mockImplementation(() => express());
-      const configPath = require.resolve('@build-tracker/fixtures/server-configs/build-tracker.config.js');
+      const configPath = require.resolve('@zeusdeux/fixtures/server-configs/build-tracker.config.js');
       RunCommand.handler({ config: configPath });
       expect(Server.default).toHaveBeenCalledWith(require(configPath));
     });

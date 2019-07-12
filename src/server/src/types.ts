@@ -1,8 +1,8 @@
 /**
  * Copyright (c) 2019 Paul Armstrong
  */
-import Comparator from '@build-tracker/comparator';
-import { Artifact, BuildMeta } from '@build-tracker/build';
+import Comparator from '@zeusdeux/comparator';
+import { Artifact, BuildMeta } from '@zeusdeux/build';
 
 export interface Build {
   meta: BuildMeta;

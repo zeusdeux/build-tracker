@@ -1,7 +1,7 @@
 /**
  * Copyright (c) 2019 Paul Armstrong
  */
-import { CellType } from '@build-tracker/comparator';
+import { CellType } from '@zeusdeux/comparator';
 import React from 'react';
 import { RevisionDeltaCell } from '../RevisionDeltaCell';
 import { fireEvent, render } from 'react-native-testing-library';

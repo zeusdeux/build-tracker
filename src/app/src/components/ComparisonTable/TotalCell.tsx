@@ -1,8 +1,8 @@
 /**
  * Copyright (c) 2019 Paul Armstrong
  */
-import { TotalCell as Cell } from '@build-tracker/comparator';
-import { formatBytes } from '@build-tracker/formatting';
+import { TotalCell as Cell } from '@zeusdeux/comparator';
+import { formatBytes } from '@zeusdeux/formatting';
 import React from 'react';
 import { Td } from './../Table';
 import { StyleProp, Text, ViewStyle } from 'react-native';

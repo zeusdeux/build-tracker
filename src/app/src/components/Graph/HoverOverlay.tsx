@@ -2,7 +2,7 @@
  * Copyright (c) 2019 Paul Armstrong
  */
 import * as Theme from '../../theme';
-import Build from '@build-tracker/build';
+import Build from '@zeusdeux/build';
 import memoize from 'memoize-one';
 import { Offset } from './Offset';
 import React from 'react';

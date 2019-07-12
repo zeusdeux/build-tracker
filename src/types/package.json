@@ -1,5 +1,5 @@
 {
-  "name": "@build-tracker/types",
+  "name": "@zeusdeux/types",
   "version": "1.0.0-alpha.1",
   "description": "Build Tracker typescript types",
   "author": "Paul Armstrong <paul@spaceyak.com>",

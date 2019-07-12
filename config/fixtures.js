@@ -1,7 +1,7 @@
 const glob = require('glob');
 const path = require('path');
-const { UnimplementedError } = require('@build-tracker/api-errors');
-const { BudgetLevel, BudgetType } = require('@build-tracker/types');
+const { UnimplementedError } = require('@zeusdeux/api-errors');
+const { BudgetLevel, BudgetType } = require('@zeusdeux/types');
 
 const builds = new Map();
 glob.sync(`${path.join(__dirname, '../src/fixtures/builds')}/*.json`).forEach(fileName => {

@@ -2,7 +2,7 @@
  * Copyright (c) 2019 Paul Armstrong
  */
 import { ArtifactCell } from '../ArtifactCell';
-import { CellType } from '@build-tracker/comparator';
+import { CellType } from '@zeusdeux/comparator';
 import React from 'react';
 import { Switch } from 'react-native';
 import { fireEvent, render } from 'react-native-testing-library';

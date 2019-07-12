@@ -7,7 +7,7 @@ import { GroupRow } from '../GroupRow';
 import React from 'react';
 import { TotalCell } from '../TotalCell';
 import { Tr } from '../../Table';
-import { CellType, GroupRow as GRow } from '@build-tracker/comparator';
+import { CellType, GroupRow as GRow } from '@zeusdeux/comparator';
 import { fireEvent, render } from 'react-native-testing-library';
 
 describe('GroupRow', () => {

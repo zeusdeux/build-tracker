@@ -1,7 +1,7 @@
 /**
  * Copyright (c) 2019 Paul Armstrong
  */
-import Build from '@build-tracker/build';
+import Build from '@zeusdeux/build';
 import ColorScale from '../modules/ColorScale';
 import {
   AddComparedRevision,

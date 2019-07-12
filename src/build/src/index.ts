@@ -1,7 +1,7 @@
 /**
  * Copyright (c) 2019 Paul Armstrong
  */
-import { ArtifactFilters } from '@build-tracker/types';
+import { ArtifactFilters } from '@zeusdeux/types';
 export type BuildMetaItem = string | { value: string; url: string };
 
 type Omit<T, K extends keyof T> = Pick<T, Exclude<keyof T, K>>;

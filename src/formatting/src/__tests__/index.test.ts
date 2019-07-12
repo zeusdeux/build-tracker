@@ -1,7 +1,7 @@
 /**
  * Copyright (c) 2019 Paul Armstrong
  */
-import { BudgetLevel, BudgetType } from '@build-tracker/types';
+import { BudgetLevel, BudgetType } from '@zeusdeux/types';
 import { formatBudgetResult, formatBytes, formatSha } from '../';
 
 describe('formatBytes', () => {

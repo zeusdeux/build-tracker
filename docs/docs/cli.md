@@ -7,12 +7,12 @@ sidebar_label: CLI
 ## Install the CLI
 
 ```sh
-yarn add @build-tracker/cli@latest
+yarn add @zeusdeux/cli@latest
 # or
-npm install --save @build-tracker/cli@latest
+npm install --save @zeusdeux/cli@latest
 ```
 
-Adding the `@build-tracker/cli` package will install a binary available as `bt-cli`. It can be run with `yarn bt-cli` or `npx bt-cli`
+Adding the `@zeusdeux/cli` package will install a binary available as `bt-cli`. It can be run with `yarn bt-cli` or `npx bt-cli`
 
 To list all commands and help, run `yarn bt-cli --help`
 

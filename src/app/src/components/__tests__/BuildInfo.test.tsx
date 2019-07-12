@@ -2,9 +2,9 @@
  * Copyright (c) 2019 Paul Armstrong
  */
 import * as Actions from '../../store/actions';
-import Build from '@build-tracker/build';
+import Build from '@zeusdeux/build';
 import BuildInfo from '../BuildInfo';
-import Comparator from '@build-tracker/comparator';
+import Comparator from '@zeusdeux/comparator';
 import mockStore from '../../store/mock';
 import React from 'react';
 import { StoreContext } from 'redux-react-hook';

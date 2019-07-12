@@ -1,11 +1,11 @@
 /**
  * Copyright (c) 2019 Paul Armstrong
  */
-import Build from '@build-tracker/build';
+import Build from '@zeusdeux/build';
 import BuildDelta from './BuildDelta';
 import markdownTable from 'markdown-table';
-import { ArtifactBudgets, ArtifactFilters, BudgetResult, Group } from '@build-tracker/types';
-import { formatBytes, formatSha } from '@build-tracker/formatting';
+import { ArtifactBudgets, ArtifactFilters, BudgetResult, Group } from '@zeusdeux/types';
+import { formatBytes, formatSha } from '@zeusdeux/formatting';
 
 export interface ArtifactSizes {
   [key: string]: number;

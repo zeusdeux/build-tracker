@@ -3,7 +3,7 @@
  */
 import * as path from 'path';
 import { Argv } from 'yargs';
-import Build from '@build-tracker/build';
+import Build from '@zeusdeux/build';
 import glob from 'glob';
 import { ServerConfig } from '../server';
 
@@ -29,7 +29,7 @@ export const builder = (yargs): Argv<Args> =>
 
 export const handler = async (args: Args): Promise<void> => {
   const config = require(args.config) as ServerConfig;
-  const fixturePath = path.dirname(require.resolve('@build-tracker/fixtures'));
+  const fixturePath = path.dirname(require.resolve('@zeusdeux/fixtures'));
 
   await config.setup();
 

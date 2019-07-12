@@ -6,10 +6,7 @@ import * as Git from '../../modules/git';
 import * as path from 'path';
 import yargs from 'yargs';
 
-const config = path.join(
-  path.dirname(require.resolve('@build-tracker/fixtures')),
-  'cli-configs/rc/.build-trackerrc.js'
-);
+const config = path.join(path.dirname(require.resolve('@zeusdeux/fixtures')), 'cli-configs/rc/.build-trackerrc.js');
 
 describe('create-build', () => {
   describe('builder', () => {

@@ -1,5 +1,5 @@
 {
-  "name": "@build-tracker/formatting",
+  "name": "@zeusdeux/formatting",
   "version": "1.0.0-alpha.1",
   "description": "Build Tracker number and string formatting tools",
   "author": "Paul Armstrong <paul@spaceyak.com>",

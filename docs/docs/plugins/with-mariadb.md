@@ -3,14 +3,14 @@ id: withMariadb
 title: MariaDB
 ---
 
-Connecting your Build Tracker application to a Maria database is easy with the help of `@build-tracker/plugin-with-mariadb`
+Connecting your Build Tracker application to a Maria database is easy with the help of `@zeusdeux/plugin-with-mariadb`
 
 ## Installation
 
 ```sh
-yarn add @build-tracker/plugin-with-mariadb@latest
+yarn add @zeusdeux/plugin-with-mariadb@latest
 # or
-npm install --save @build-tracker/plugin-with-mariadb@latest
+npm install --save @zeusdeux/plugin-with-mariadb@latest
 ```
 
 ## Configuration
@@ -18,7 +18,7 @@ npm install --save @build-tracker/plugin-with-mariadb@latest
 Edit your `build-tracker.config.js` file and compose your output configuration:
 
 ```js
-const withMariadb = require('@build-tracker/plugin-with-mariadb');
+const withMariadb = require('@zeusdeux/plugin-with-mariadb');
 
 module.exports = withMariadb({
   pg: {

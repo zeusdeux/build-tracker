@@ -3,14 +3,14 @@ id: withPostgres
 title: Postgres
 ---
 
-Connecting your Build Tracker application to a PostgreSQL database is easy with the help of `@build-tracker/plugin-with-postgres`
+Connecting your Build Tracker application to a PostgreSQL database is easy with the help of `@zeusdeux/plugin-with-postgres`
 
 ## Installation
 
 ```sh
-yarn add @build-tracker/plugin-with-postgres@latest
+yarn add @zeusdeux/plugin-with-postgres@latest
 # or
-npm install --save @build-tracker/plugin-with-postgres@latest
+npm install --save @zeusdeux/plugin-with-postgres@latest
 ```
 
 ## Configuration
@@ -18,7 +18,7 @@ npm install --save @build-tracker/plugin-with-postgres@latest
 Edit your `build-tracker.config.js` file and compose your output configuration:
 
 ```js
-const withPostgres = require('@build-tracker/plugin-with-postgres');
+const withPostgres = require('@zeusdeux/plugin-with-postgres');
 
 module.exports = withPostgres({
   pg: {

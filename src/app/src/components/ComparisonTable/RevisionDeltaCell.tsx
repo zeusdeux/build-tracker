@@ -1,8 +1,8 @@
 /**
  * Copyright (c) 2019 Paul Armstrong
  */
-import { RevisionDeltaCell as Cell } from '@build-tracker/comparator';
-import { formatSha } from '@build-tracker/formatting';
+import { RevisionDeltaCell as Cell } from '@zeusdeux/comparator';
+import { formatSha } from '@zeusdeux/formatting';
 import React from 'react';
 import { Th } from '../Table';
 import Tooltip from '../Tooltip';

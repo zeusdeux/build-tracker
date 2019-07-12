@@ -2,7 +2,7 @@
  * Copyright (c) 2019 Paul Armstrong
  */
 import * as Theme from '../../../theme';
-import { CellType } from '@build-tracker/comparator';
+import { CellType } from '@zeusdeux/comparator';
 import React from 'react';
 import { RevisionCell } from '../RevisionCell';
 import { Th } from '../../Table';

@@ -1,5 +1,5 @@
-const withPostgres = require('@build-tracker/plugin-with-postgres').default;
-const { BudgetLevel, BudgetType } = require('@build-tracker/types');
+const withPostgres = require('@zeusdeux/plugin-with-postgres').default;
+const { BudgetLevel, BudgetType } = require('@zeusdeux/types');
 
 module.exports = withPostgres({
   artifacts: {

@@ -1,9 +1,9 @@
 /**
  * Copyright (c) 2019 Paul Armstrong
  */
-import { ComparisonMatrix } from '@build-tracker/comparator';
+import { ComparisonMatrix } from '@zeusdeux/comparator';
 import cosmiconfig from 'cosmiconfig';
-import { Artifact, ArtifactSizes, BuildMeta } from '@build-tracker/build';
+import { Artifact, ArtifactSizes, BuildMeta } from '@zeusdeux/build';
 
 interface BuildJson {
   meta: BuildMeta;

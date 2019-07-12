@@ -3,7 +3,7 @@
  */
 import * as Theme from '../../theme';
 import FolderIcon from '../../icons/Folder';
-import { GroupCell as GCell } from '@build-tracker/comparator';
+import { GroupCell as GCell } from '@zeusdeux/comparator';
 import Hoverable from '../Hoverable';
 import React from 'react';
 import { Th } from '../Table';

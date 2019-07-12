@@ -1,8 +1,8 @@
 /**
  * Copyright (c) 2019 Paul Armstrong
  */
-import { ArtifactSizes } from '@build-tracker/build';
-import { Budget, BudgetResult } from '@build-tracker/types';
+import { ArtifactSizes } from '@zeusdeux/build';
+import { Budget, BudgetResult } from '@zeusdeux/types';
 import { delta, percentDelta } from './artifact-math';
 
 export default class ArtifactDelta<AS extends ArtifactSizes = ArtifactSizes> {

@@ -1,14 +1,14 @@
 /**
  * Copyright (c) 2019 Paul Armstrong
  */
-import { BudgetLevel } from '@build-tracker/types';
+import { BudgetLevel } from '@zeusdeux/types';
 import ErrorIcon from '../../icons/Error';
 import React from 'react';
 import { Td } from '../Table';
 import Tooltip from '../Tooltip';
 import WarningIcon from '../../icons/Warning';
-import { DeltaCell as Cell, TotalDeltaCell as TDCell } from '@build-tracker/comparator';
-import { formatBudgetResult, formatBytes } from '@build-tracker/formatting';
+import { DeltaCell as Cell, TotalDeltaCell as TDCell } from '@zeusdeux/comparator';
+import { formatBudgetResult, formatBytes } from '@zeusdeux/formatting';
 import { StyleProp, StyleSheet, Text, View, ViewStyle } from 'react-native';
 
 interface Props {

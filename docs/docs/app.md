@@ -7,12 +7,12 @@ sidebar_label: Application
 ## Install
 
 ```sh
-yarn add @build-tracker/server@latest
+yarn add @zeusdeux/server@latest
 # or
-npm install --save @build-tracker/server@latest
+npm install --save @zeusdeux/server@latest
 ```
 
-Adding the `@build-tracker/server` package will install a binary available as `bt-server`. It can be run with `yarn bt-server` or `npx bt-server`
+Adding the `@zeusdeux/server` package will install a binary available as `bt-server`. It can be run with `yarn bt-server` or `npx bt-server`
 
 To list all commands and help, run `yarn bt-server --help`
 

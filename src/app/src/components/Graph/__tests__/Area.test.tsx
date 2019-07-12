@@ -2,9 +2,9 @@
  * Copyright (c) 2019 Paul Armstrong
  */
 import Area from '../Area';
-import Build from '@build-tracker/build';
+import Build from '@zeusdeux/build';
 import ColorScale from '../../../modules/ColorScale';
-import Comparator from '@build-tracker/comparator';
+import Comparator from '@zeusdeux/comparator';
 import React from 'react';
 import { render } from '@testing-library/react';
 import { stack } from 'd3-shape';

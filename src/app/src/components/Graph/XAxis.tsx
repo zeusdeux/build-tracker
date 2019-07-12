@@ -2,7 +2,7 @@
  * Copyright (c) 2019 Paul Armstrong
  */
 import { axisBottom } from 'd3-axis';
-import { formatSha } from '@build-tracker/formatting';
+import { formatSha } from '@zeusdeux/formatting';
 import React from 'react';
 import { ScalePoint } from 'd3-scale';
 import { select } from 'd3-selection';

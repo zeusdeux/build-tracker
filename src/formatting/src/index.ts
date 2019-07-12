@@ -1,7 +1,7 @@
 /**
  * Copyright (c) 2019 Paul Armstrong
  */
-import { BudgetLevel, BudgetResult, BudgetType } from '@build-tracker/types';
+import { BudgetLevel, BudgetResult, BudgetType } from '@zeusdeux/types';
 /**
  * The kibibyte is a multiple of the unit byte for quantities of digital information.
  * KB is 1000 bytes, but we're accustomed to seeing KB as 1024. That unit is actually KiB

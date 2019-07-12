@@ -11,7 +11,7 @@ sidebar_label: Getting Started
 Install the Build Tracker server:
 
 ```sh
-yarn add @build-tracker/server@latest
+yarn add @zeusdeux/server@latest
 ```
 
 Create a configuration file, `build-tracker.config.js`.
@@ -21,7 +21,7 @@ At a minimum, use one of the [available database plugins](plugins/plugins) and a
 For this quick start, we'll use Postgres. We'll assume your database is already up and running.
 
 ```js
-const withPostgres = require('@build-tracker/withPostgres').default;
+const withPostgres = require('@zeusdeux/withPostgres').default;
 module.exports = withPostgres({
   url: 'https://your-build-tracker-app',
   pg: {
@@ -48,7 +48,7 @@ Your application will now be accessible at the provided `url`.
 Along with your application code, install the Build Tracker CLI in the same repository as the application code you want to track:
 
 ```sh
-yarn add @build-tracker/cli@latest
+yarn add @zeusdeux/cli@latest
 ```
 
 Create a configuration file, `build-tracker.config.js`

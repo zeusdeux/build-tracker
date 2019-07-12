@@ -10,12 +10,10 @@ describe('run command', () => {
     test('looks for the config in the process working directory', () => {
       jest
         .spyOn(process, 'cwd')
-        .mockReturnValue(path.join(path.dirname(require.resolve('@build-tracker/fixtures')), 'server-configs'));
+        .mockReturnValue(path.join(path.dirname(require.resolve('@zeusdeux/fixtures')), 'server-configs'));
 
       const args = Command.builder(yargs([]));
-      expect(args.argv.config).toEqual(
-        require.resolve('@build-tracker/fixtures/server-configs/build-tracker.config.js')
-      );
+      expect(args.argv.config).toEqual(require.resolve('@zeusdeux/fixtures/server-configs/build-tracker.config.js'));
     });
 
     test('resolves the config path for requires', () => {
@@ -31,7 +29,7 @@ describe('run command', () => {
   describe('handler', () => {
     test('runs the setup command for the config', () => {
       jest.spyOn(console, 'log').mockImplementation(() => {});
-      const configPath = require.resolve('@build-tracker/fixtures/server-configs/build-tracker.config.js');
+      const configPath = require.resolve('@zeusdeux/fixtures/server-configs/build-tracker.config.js');
       const config = require(configPath);
       const setupSpy = jest.spyOn(config, 'setup');
       Command.handler({ config: configPath });
@@ -39,7 +37,7 @@ describe('run command', () => {
     });
 
     test('exits if no setup found', () => {
-      const configPath = require.resolve('@build-tracker/fixtures/server-configs/build-tracker.config.js');
+      const configPath = require.resolve('@zeusdeux/fixtures/server-configs/build-tracker.config.js');
       const config = require(configPath);
       delete config.setup;
       expect(Command.handler({ config: configPath })).rejects.toThrow();

@@ -3,11 +3,11 @@
  */
 import * as Actions from '../../store/actions';
 import * as CrossFetch from 'cross-fetch';
-import Build from '@build-tracker/build';
-import buildA from '@build-tracker/fixtures/builds/22abb6f829a07ca96ff56deeadf4d0e8fc2dbb04.json';
-import buildB from '@build-tracker/fixtures/builds/01141f29743fb2bdd7e176cf919fc964025cea5a.json';
-import buildC from '@build-tracker/fixtures/builds/243024909db66ac3c3e48d2ffe4015f049609834.json';
-import Comparator from '@build-tracker/comparator';
+import Build from '@zeusdeux/build';
+import buildA from '@zeusdeux/fixtures/builds/22abb6f829a07ca96ff56deeadf4d0e8fc2dbb04.json';
+import buildB from '@zeusdeux/fixtures/builds/01141f29743fb2bdd7e176cf919fc964025cea5a.json';
+import buildC from '@zeusdeux/fixtures/builds/243024909db66ac3c3e48d2ffe4015f049609834.json';
+import Comparator from '@zeusdeux/comparator';
 import Comparison from '../../views/Comparison';
 import Main from '../Main';
 import mockStore from '../../store/mock';

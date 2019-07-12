@@ -7,7 +7,7 @@ import { render } from 'react-native-testing-library';
 import { RevisionCell } from '../RevisionCell';
 import { RevisionDeltaCell } from '../RevisionDeltaCell';
 import { TextCell } from '../TextCell';
-import { CellType, HeaderRow as HRow } from '@build-tracker/comparator';
+import { CellType, HeaderRow as HRow } from '@zeusdeux/comparator';
 
 describe('HeaderRow', () => {
   describe('render', () => {

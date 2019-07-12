@@ -3,7 +3,7 @@
  */
 import * as Mariadb from 'mariadb';
 import Queries from '../queries';
-import { NotFoundError, UnimplementedError } from '@build-tracker/api-errors';
+import { NotFoundError, UnimplementedError } from '@zeusdeux/api-errors';
 
 const row1Result = {
   meta: { branch: 'master', revision: '12345' },

@@ -1,8 +1,8 @@
 /**
  * Copyright (c) 2019 Paul Armstrong
  */
-import Build from '@build-tracker/build';
-import Comparator from '@build-tracker/comparator';
+import Build from '@zeusdeux/build';
+import Comparator from '@zeusdeux/comparator';
 import EmptyState from '../../components/EmptyState';
 import Graph from '../Graph';
 import mockStore from '../../store/mock';

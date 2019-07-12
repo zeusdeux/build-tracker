@@ -3,7 +3,7 @@
  */
 import * as Theme from '../theme';
 import AppBarView from '../views/AppBar';
-import Build from '@build-tracker/build';
+import Build from '@zeusdeux/build';
 import { Handles as DrawerHandles } from '../components/Drawer';
 import DrawerView from '../views/Drawer';
 import { fetch } from 'cross-fetch';

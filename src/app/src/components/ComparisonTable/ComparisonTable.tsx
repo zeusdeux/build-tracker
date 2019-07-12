@@ -2,7 +2,7 @@
  * Copyright (c) 2019 Paul Armstrong
  */
 import BodyRow from './BodyRow';
-import Comparator from '@build-tracker/comparator';
+import Comparator from '@zeusdeux/comparator';
 import GroupRow from './GroupRow';
 import HeaderRow from './HeaderRow';
 import React from 'react';

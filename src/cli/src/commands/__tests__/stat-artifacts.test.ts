@@ -23,10 +23,7 @@ describe('stat-artifacts command', () => {
       test('writes the artifact stats to stdout', () => {
         const writeSpy = jest.spyOn(process.stdout, 'write').mockImplementationOnce(() => true);
         return Command.handler({
-          config: path.join(
-            path.dirname(require.resolve('@build-tracker/fixtures')),
-            'cli-configs/rc/.build-trackerrc.js'
-          ),
+          config: path.join(path.dirname(require.resolve('@zeusdeux/fixtures')), 'cli-configs/rc/.build-trackerrc.js'),
           out: true
         }).then(() => {
           expect(writeSpy.mock.calls[writeSpy.mock.calls.length - 1][0]).toMatchInlineSnapshot(`

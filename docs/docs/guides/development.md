@@ -86,13 +86,13 @@ The tool for managing these packages is [Lerna](https://github.com/lerna/lerna) 
 
 All core Build Tracker packages reside here.
 
-All folder names should be mapped as the publishable name without the `@build-tracker` scope. For example: `@build-tracker/app` is in the path `src/app`, while `@build-tracker/server` is at `src/server`.
+All folder names should be mapped as the publishable name without the `@build-tracker` scope. For example: `@zeusdeux/app` is in the path `src/app`, while `@zeusdeux/server` is at `src/server`.
 
 #### Plugins `./plugins`
 
 All implementation-specific code for various integrations should be kept here, instead of in the `src` directory.
 
-All folder names should be mapped as the publishable name without the `@build-tracker/plugin-` scope. For example: `@build-tracker/plugin-with-mariadb` is in the path `plugins/with-mariadb`.
+All folder names should be mapped as the publishable name without the `@zeusdeux/plugin-` scope. For example: `@zeusdeux/plugin-with-mariadb` is in the path `plugins/with-mariadb`.
 
 #### Docs `./docs`
 
@@ -107,7 +107,7 @@ Here are some things to keep in mind while working in a monorepo:
 To add a third-party dependency to a sub-package in the Build Tracker repository, ensure that it's done from the specific sub-package:
 
 ```sh
-# To add to the @build-tracker/app package
+# To add to the @zeusdeux/app package
 $ (cd src/app && yarn add some-third-party-module)
 ```
 

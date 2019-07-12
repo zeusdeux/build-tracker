@@ -2,9 +2,9 @@
  * Copyright (c) 2019 Paul Armstrong
  */
 import * as Actions from '../actions';
-import Build from '@build-tracker/build';
+import Build from '@zeusdeux/build';
 import ColorScale from '../../modules/ColorScale';
-import Comparator from '@build-tracker/comparator';
+import Comparator from '@zeusdeux/comparator';
 import reducer from '../reducer';
 import { State } from '../types';
 

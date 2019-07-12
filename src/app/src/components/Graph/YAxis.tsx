@@ -2,7 +2,7 @@
  * Copyright (c) 2019 Paul Armstrong
  */
 import { axisLeft } from 'd3-axis';
-import { formatBytes } from '@build-tracker/formatting';
+import { formatBytes } from '@zeusdeux/formatting';
 import React from 'react';
 import { ScaleLinear } from 'd3-scale';
 import { select } from 'd3-selection';

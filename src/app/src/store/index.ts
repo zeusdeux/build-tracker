@@ -2,7 +2,7 @@
  * Copyright (c) 2019 Paul Armstrong
  */
 import ColorScale from '../modules/ColorScale';
-import Comparator from '@build-tracker/comparator';
+import Comparator from '@zeusdeux/comparator';
 import reducer from './reducer';
 import { Actions, State } from './types';
 import { createStore, Store } from 'redux';

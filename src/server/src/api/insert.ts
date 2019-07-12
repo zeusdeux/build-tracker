@@ -1,9 +1,9 @@
 /**
  * Copyright (c) 2019 Paul Armstrong
  */
-import Build from '@build-tracker/build';
-import Comparator from '@build-tracker/comparator';
-import { NotFoundError } from '@build-tracker/api-errors';
+import Build from '@zeusdeux/build';
+import Comparator from '@zeusdeux/comparator';
+import { NotFoundError } from '@zeusdeux/api-errors';
 import { Queries } from '../types';
 import { ServerConfig } from '../server';
 import { Request, RequestHandler, Response } from 'express';

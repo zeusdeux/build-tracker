@@ -2,7 +2,7 @@
  * Copyright (c) 2019 Paul Armstrong
  */
 import api from './api';
-import { AppConfig } from '@build-tracker/types';
+import { AppConfig } from '@zeusdeux/types';
 import bodyParser from 'body-parser';
 import crypto from 'crypto';
 import expressPino from 'express-pino-logger';
@@ -58,7 +58,7 @@ export default function runBuildTracker(config: ServerConfig): Application {
 
   app.use(helmet.contentSecurityPolicy({ directives: getCSP(IN_DEV) }));
 
-  const APP_ROOT = path.dirname(require.resolve('@build-tracker/app'));
+  const APP_ROOT = path.dirname(require.resolve('@zeusdeux/app'));
 
   if (IN_DEV) {
     const middleware = require('webpack-dev-middleware');

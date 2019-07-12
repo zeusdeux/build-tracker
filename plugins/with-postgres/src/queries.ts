@@ -1,10 +1,10 @@
 /**
  * Copyright (c) 2019 Paul Armstrong
  */
-import Build from '@build-tracker/build';
-import { Build as BuildStruct } from '@build-tracker/server/src/types';
+import Build from '@zeusdeux/build';
+import { Build as BuildStruct } from '@zeusdeux/server/src/types';
 import { Pool } from 'pg';
-import { NotFoundError, UnimplementedError } from '@build-tracker/api-errors';
+import { NotFoundError, UnimplementedError } from '@zeusdeux/api-errors';
 
 export default class Queries {
   private _pool: Pool;

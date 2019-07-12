@@ -1,5 +1,5 @@
-const withMaria = require('@build-tracker/plugin-with-mariadb').default;
-const { BudgetLevel, BudgetType } = require('@build-tracker/types');
+const withMaria = require('@zeusdeux/plugin-with-mariadb').default;
+const { BudgetLevel, BudgetType } = require('@zeusdeux/types');
 
 module.exports = withMaria({
   defaultBranch: 'master',

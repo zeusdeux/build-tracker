@@ -6,7 +6,7 @@ import Hoverable from '../Hoverable';
 import { hsl } from 'd3-color';
 import React from 'react';
 import { Th } from '../Table';
-import { ArtifactCell as ACell, GroupCell as GCell } from '@build-tracker/comparator';
+import { ArtifactCell as ACell, GroupCell as GCell } from '@zeusdeux/comparator';
 import { StyleProp, StyleSheet, Switch, Text, TouchableOpacity, View, ViewStyle } from 'react-native';
 
 interface Props {

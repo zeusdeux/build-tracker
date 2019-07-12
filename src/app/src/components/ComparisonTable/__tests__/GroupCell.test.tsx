@@ -1,7 +1,7 @@
 /**
  * Copyright (c) 2019 Paul Armstrong
  */
-import { CellType } from '@build-tracker/comparator';
+import { CellType } from '@zeusdeux/comparator';
 import { GroupCell } from '../GroupCell';
 import React from 'react';
 import { Switch } from 'react-native';
